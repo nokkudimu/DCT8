@@ -245,6 +245,9 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Catalog>Игроки</Catalog>
+			<Catalog>Персонажи</Catalog>
+			<DataProcessor>ПоискИгрока</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
