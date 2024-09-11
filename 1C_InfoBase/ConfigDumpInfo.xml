@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
+	<ConfigVersions>
+		<Metadata name="Catalog.Игроки" id="3d4b57b6-d878-40d7-896c-c7d7211c9c5e" configVersion="aa16f4a535a5214cb21caf8a0ba3ad3600000000"/>
+		<Metadata name="Catalog.Персонажи" id="c31b15e3-cf84-48a5-88a3-b6ebc53f1b95" configVersion="f1a070cf1cccf3409108ba93685624b800000000"/>
+		<Metadata name="Configuration.Конфигурация" id="66bc946a-678a-4bff-921d-0c7645f9a2ec" configVersion="b388933c11a5a346b0b0ffe44c6671aa00000000"/>
+		<Metadata name="DataProcessor.ForTesting" id="d54212e6-f5e1-40dd-a9ec-f380300236a7" configVersion="6e014641f046aa4f85f2fc1b8203572100000000"/>
+		<Metadata name="DataProcessor.ForTesting.Form.Форма" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa" configVersion="bd22708ab255d945b89a5157c5e4993b00000000"/>
+		<Metadata name="DataProcessor.ForTesting.Form.Форма.Form" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa.0" configVersion="15eafe1c5f31ce4cbc2022a0f238942400000000"/>
+		<Metadata name="DataProcessor.ПоискИгрока" id="f7867591-21c2-42b0-b57e-ee6d03b23380" configVersion="5f48c6cda685074b82e00b7dfac1b8df00000000"/>
+		<Metadata name="DataProcessor.ПоискИгрока.Form.Форма" id="37d6a3c0-e89e-4159-bffb-d16ad4acbe93" configVersion="c28a3e919294354d905d05dfd577829e00000000"/>
+		<Metadata name="DataProcessor.ПоискИгрока.Form.Форма.Form" id="37d6a3c0-e89e-4159-bffb-d16ad4acbe93.0" configVersion="ef54f9a248c56d4fad115bc1d1162e3200000000"/>
+		<Metadata name="Language.Русский" id="56ae6793-241e-49e9-88df-fac30b618adf" configVersion="a2d19dff3707e34fa3e68cb2360ba1cc00000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

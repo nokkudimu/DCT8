@@ -248,6 +248,7 @@
 			<Catalog>Игроки</Catalog>
 			<Catalog>Персонажи</Catalog>
 			<DataProcessor>ПоискИгрока</DataProcessor>
+			<DataProcessor>ForTesting</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
