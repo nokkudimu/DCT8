@@ -245,10 +245,14 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Role>СтандартныйРежим</Role>
 			<Catalog>Игроки</Catalog>
 			<Catalog>Персонажи</Catalog>
+			<Catalog>Арены</Catalog>
+			<Document>МатчиОнлайн</Document>
 			<DataProcessor>ПоискИгрока</DataProcessor>
 			<DataProcessor>ForTesting</DataProcessor>
+			<InformationRegister>СтатистикаМатчей</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

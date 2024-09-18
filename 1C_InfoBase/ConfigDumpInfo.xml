@@ -1,15 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
-		<Metadata name="Catalog.Игроки" id="3d4b57b6-d878-40d7-896c-c7d7211c9c5e" configVersion="aa16f4a535a5214cb21caf8a0ba3ad3600000000"/>
-		<Metadata name="Catalog.Персонажи" id="c31b15e3-cf84-48a5-88a3-b6ebc53f1b95" configVersion="f1a070cf1cccf3409108ba93685624b800000000"/>
-		<Metadata name="Configuration.Конфигурация" id="66bc946a-678a-4bff-921d-0c7645f9a2ec" configVersion="b388933c11a5a346b0b0ffe44c6671aa00000000"/>
-		<Metadata name="DataProcessor.ForTesting" id="d54212e6-f5e1-40dd-a9ec-f380300236a7" configVersion="6e014641f046aa4f85f2fc1b8203572100000000"/>
-		<Metadata name="DataProcessor.ForTesting.Form.Форма" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa" configVersion="bd22708ab255d945b89a5157c5e4993b00000000"/>
-		<Metadata name="DataProcessor.ForTesting.Form.Форма.Form" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa.0" configVersion="15eafe1c5f31ce4cbc2022a0f238942400000000"/>
-		<Metadata name="DataProcessor.ПоискИгрока" id="f7867591-21c2-42b0-b57e-ee6d03b23380" configVersion="5f48c6cda685074b82e00b7dfac1b8df00000000"/>
-		<Metadata name="DataProcessor.ПоискИгрока.Form.Форма" id="37d6a3c0-e89e-4159-bffb-d16ad4acbe93" configVersion="c28a3e919294354d905d05dfd577829e00000000"/>
-		<Metadata name="DataProcessor.ПоискИгрока.Form.Форма.Form" id="37d6a3c0-e89e-4159-bffb-d16ad4acbe93.0" configVersion="ef54f9a248c56d4fad115bc1d1162e3200000000"/>
-		<Metadata name="Language.Русский" id="56ae6793-241e-49e9-88df-fac30b618adf" configVersion="a2d19dff3707e34fa3e68cb2360ba1cc00000000"/>
+		<Metadata name="Catalog.Арены" id="e3b59f1d-f499-478a-80fa-17f763e7b74b" configVersion="81025aafbd85a440af2190016544d41900000000"/>
+		<Metadata name="Catalog.Игроки" id="3d4b57b6-d878-40d7-896c-c7d7211c9c5e" configVersion="96771c3ff7c16a46b19438a6be70ddbc00000000">
+			<Metadata name="Catalog.Игроки.Attribute.TekkenID" id="715af342-553e-4bf9-abd9-f78afce62577"/>
+			<Metadata name="Catalog.Игроки.Attribute.ДоляПобед" id="f53278fb-6208-4738-8d5f-975b8170c387"/>
+		</Metadata>
+		<Metadata name="Catalog.Персонажи" id="c31b15e3-cf84-48a5-88a3-b6ebc53f1b95" configVersion="c0f7affa4dc4834a93583b285fec0fcd00000000">
+			<Metadata name="Catalog.Персонажи.Attribute.ДоляПобед" id="0ba2f8ee-de6c-4d0f-b8fa-790a2ce9afa1"/>
+		</Metadata>
+		<Metadata name="Configuration.Конфигурация" id="66bc946a-678a-4bff-921d-0c7645f9a2ec" configVersion="3fb23081842f2a488996b742ccb4132300000000"/>
+		<Metadata name="DataProcessor.ForTesting" id="d54212e6-f5e1-40dd-a9ec-f380300236a7" configVersion="252dcaf86d7c9e49b7b4f348b23597b300000000"/>
+		<Metadata name="DataProcessor.ForTesting.Form.Форма" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa" configVersion="cfe2b5642860cc4da4beacbd908ca0de00000000"/>
+		<Metadata name="DataProcessor.ForTesting.Form.Форма.Form" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa.0" configVersion="d3d8fc6586430a4d83b164930ed0b18b00000000"/>
+		<Metadata name="DataProcessor.ПоискИгрока" id="f7867591-21c2-42b0-b57e-ee6d03b23380" configVersion="0c5029f5a7a10d47ab4368455309f0a100000000"/>
+		<Metadata name="DataProcessor.ПоискИгрока.Form.Форма" id="37d6a3c0-e89e-4159-bffb-d16ad4acbe93" configVersion="e3f7cf7f1aaad04f85ab776021a8f4a700000000"/>
+		<Metadata name="DataProcessor.ПоискИгрока.Form.Форма.Form" id="37d6a3c0-e89e-4159-bffb-d16ad4acbe93.0" configVersion="ae026745dd79654db5a547dd52be592600000000"/>
+		<Metadata name="Document.МатчиОнлайн" id="944fa229-c900-4a52-8c6d-d59d47da74eb" configVersion="62170f03f7ec014ca611fae40c4e9ec700000000">
+			<Metadata name="Document.МатчиОнлайн.Attribute.Игрок2" id="39f75931-02b4-4194-88da-0a8bbcb6db95"/>
+			<Metadata name="Document.МатчиОнлайн.Attribute.Игрок1" id="9440bae9-501e-4ccd-96a1-1cf216d1ef75"/>
+			<Metadata name="Document.МатчиОнлайн.Attribute.ПерсонажИгрока2" id="9eeb289e-5088-4a4a-943a-f6d88c02b1ca"/>
+			<Metadata name="Document.МатчиОнлайн.Attribute.ПерсонажИгрока1" id="c4c78131-4e2c-4fd2-ab16-1fe4f3e91e04"/>
+		</Metadata>
+		<Metadata name="InformationRegister.СтатистикаМатчей" id="01aed970-b1b0-45d9-bef4-d95d9f41ca2b" configVersion="882249264aa69b40ba848ec21692312c00000000">
+			<Metadata name="InformationRegister.СтатистикаМатчей.Dimension.Персонаж" id="28f34acf-b093-44a2-8e12-93f46b277b00"/>
+			<Metadata name="InformationRegister.СтатистикаМатчей.Dimension.Игрок" id="8973b1a3-2c23-458e-9711-4af9a550bed6"/>
+			<Metadata name="InformationRegister.СтатистикаМатчей.Resource.Счет" id="c939676c-5865-43c5-9abc-75094b44267d"/>
+			<Metadata name="InformationRegister.СтатистикаМатчей.Resource.КоличествоПобедВМатчеИгрок2" id="d272d709-af53-41d0-8c9b-9e80346ec323"/>
+			<Metadata name="InformationRegister.СтатистикаМатчей.Resource.КоличествоПобедВМатчеИгрок1" id="ec2d1f29-c49e-400d-9f36-3232e0ae7c70"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="56ae6793-241e-49e9-88df-fac30b618adf" configVersion="7d5e576c6e939b4a856933c8fe0aba5700000000"/>
+		<Metadata name="Role.СтандартныйРежим" id="567bfa10-33d7-404a-8fd9-1f883baf8c83" configVersion="a28b676642ed024583235914d51dc11c00000000"/>
+		<Metadata name="Role.СтандартныйРежим.Rights" id="567bfa10-33d7-404a-8fd9-1f883baf8c83.0" configVersion="bc3ff22ad8ad7642828d20e36998116900000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>
