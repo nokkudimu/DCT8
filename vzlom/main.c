@@ -31,17 +31,17 @@ void Func_StockPid(const char *processtarget) {
 }
 
 void ReadProcessMemory(unsigned long address, unsigned int pid) {
-    int buf = 0;
+    int buf = 0; 
     int err_code = ptrace(PTRACE_ATTACH, stockthepid.pid, NULL, NULL);
 
     if (err_code == -1) {
         printf("ERROR 1\n");
         exit(-1);
     }
-    wait(NULL);
+
     printf("Reading the address of the process... \n");
     for (int i = 0; i < 1; i++) {
-        buf = ptrace(PTRACE_PEEKDATA, stockthepid.pid, NULL, NULL);
+        buf = ptrace(PTRACE_PEEKDATA, stockthepid.pid, address + i * sizeof(int), NULL);
 
         if (err_code == -1) {
             printf("ERROR 2\n");
@@ -49,6 +49,9 @@ void ReadProcessMemory(unsigned long address, unsigned int pid) {
         }
         printf("%d\n", buf);
     }
+
+
+
     err_code = ptrace(PTRACE_DETACH, stockthepid.pid, NULL, NULL);
     if (err_code == -1) {
         printf("ERROR 3\n");
@@ -56,39 +59,39 @@ void ReadProcessMemory(unsigned long address, unsigned int pid) {
     }
 }
 
-void WriteProcessMemory(unsigned long address, unsigned int pid) {
-    int WhatValue = 0;
-    int buf = 0;
-
-    printf("Enter a new value!\n");
-    scanf("%d", &WhatValue);
-
-    int err_code = ptrace(PTRACE_ATTACH, stockthepid.pid, NULL, NULL);
-    if (err_code = -1) {
-        printf("ERROR 1\n");
-        exit(-1);
-    }
-    wait(NULL);
-    printf("Rewriting the value!\n");
-    for (int i = 0; i < 1; i++) {
-        buf = ptrace(PTRACE_POKEDATA, stockthepid.pid, address + i * sizeof(int), WhatValue);
-        if (buf == -1) {
-            printf("ERROR 2]\n");
-            exit(-1);
-        }
-        printf("Value rewritten!\n");
-    }
-    err_code = ptrace(PTRACE_DETACH, stockthepid.pid, NULL, NULL);
-    if (err_code == -1) {
-        printf("ERROR 3\n");
-        exit(-1);
-    }
-}
+//void WriteProcessMemory(unsigned long address, unsigned int pid) {
+//    int WhatValue = 0;
+//    int buf = 0;
+//
+//    printf("Enter a new value!\n");
+//    scanf("%d", &WhatValue);
+//
+//    int err_code = ptrace(PTRACE_ATTACH, stockthepid.pid, NULL, NULL);
+//    if (err_code = -1) {
+//        printf("ERROR 1\n");
+//        exit(-1);
+//    }
+//    wait(NULL);
+//    printf("Rewriting the value!\n");
+//    for (int i = 0; i < 1; i++) {
+//        buf = ptrace(PTRACE_POKEDATA, stockthepid.pid, address + i * sizeof(int), WhatValue);
+//        if (buf == -1) {
+//            printf("ERROR 2]\n");
+//            exit(-1);
+//        }
+//        printf("Value rewritten!\n");
+//    }
+//    err_code = ptrace(PTRACE_DETACH, stockthepid.pid, NULL, NULL);
+//    if (err_code == -1) {
+//        printf("ERROR 3\n");
+//        exit(-1);
+//    }
+//}
 
 int main() {
-    Func_StockPid(""); // don't know the process name
-    ReadProcessMemory(0x0, stockthepid.pid);
-    WriteProcessMemory(0x0, stockthepid.pid);
-
+    Func_StockPid("pidof -s GameThread"); // don't know the process name
+    ReadProcessMemory(0x6ffffc65af3c, stockthepid.pid);
+    //WriteProcessMemory(0x6ffffc65af3c, stockthepid.pid);
+ 
     return 0;
 }
