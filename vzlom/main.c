@@ -105,6 +105,7 @@ int main() {
     printf("%d\n", current_value);
     printf("%d\n", value);
 
+    // THIS IS NOT RIGHT: the process is locked down while reading the memory (gotta read memory in background somehow) 
     while (current_value == value) {
         delay(1000);
         value = ReadProcessMemory(0x5865057e1ecf, stockthepid.pid);
