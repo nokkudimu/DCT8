@@ -16,6 +16,7 @@ struct StockThePid {
     FILE *pid_pipe;    
 } stockthepid;
 
+// currently not in use
 void delay(int number_of_seconds) {
     int milli_seconds = number_of_seconds * 1000;
     clock_t start_time = clock();
@@ -36,8 +37,7 @@ void Func_StockPid(const char *processtarget) {
         pclose(stockthepid.pid_pipe);
     }   
 }
-
-int GetCurrentProcessMemoryValue(unsigned long address, unsigned int pid) {
+void ReadProcessMemory(unsigned long address, unsigned int pid) {
     int buf = 0; 
     int err_code = ptrace(PTRACE_ATTACH, stockthepid.pid, NULL, NULL);
 
@@ -64,53 +64,10 @@ int GetCurrentProcessMemoryValue(unsigned long address, unsigned int pid) {
         printf("ERROR 3\n");
         exit(-1);
     }
-    return buf;
-}
-
-int ReadProcessMemory(unsigned long address, unsigned int pid) {
-    int buf = 0; 
-    int err_code = ptrace(PTRACE_ATTACH, stockthepid.pid, NULL, NULL);
-
-    if (err_code == -1) {
-        printf("ERROR 1\n");
-        exit(-1);
-    }
-
-    printf("Reading the address of the process... \n");
-    for (int i = 0; i < 1; i++) {
-        buf = ptrace(PTRACE_PEEKDATA, stockthepid.pid, address + i * sizeof(int), NULL);
-
-        if (err_code == -1) {
-            printf("ERROR 2\n");
-            exit(-1);
-        }
-        printf("%d\n", buf);
-    }
-
-
-
-    err_code = ptrace(PTRACE_DETACH, stockthepid.pid, NULL, NULL);
-    if (err_code == -1) {
-        printf("ERROR 3\n");
-        exit(-1);
-    }
-    return buf;
 }
 
 int main() {
-    Func_StockPid("pidof -s gnome-calculator"); // don't know the process name
-    int current_value = GetCurrentProcessMemoryValue(0x5865057e1ecf, stockthepid.pid);
-    int value = current_value;
-    
-    printf("%d\n", current_value);
-    printf("%d\n", value);
-
-    // THIS IS NOT RIGHT: the process is locked down while reading the memory (gotta read memory in background somehow) 
-    while (current_value == value) {
-        delay(1000);
-        value = ReadProcessMemory(0x5865057e1ecf, stockthepid.pid);
-    }
-    //WriteProcessMemory(0x6ffffc65af3c, stockthepid.pid);
-    
+    Func_StockPid("pidof -s steam");
+    ReadProcessMemory(0x5865057e1ecf, stockthepid.pid);
     return 0;
 }

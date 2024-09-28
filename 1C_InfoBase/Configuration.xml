@@ -236,8 +236,8 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>DontUse</ModalityUseMode>
-			<SynchronousPlatformExtensionAndAddInCallUseMode>DontUse</SynchronousPlatformExtensionAndAddInCallUseMode>
+			<ModalityUseMode>Use</ModalityUseMode>
+			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Taxi</InterfaceCompatibilityMode>
 			<DatabaseTablespacesUseMode>DontUse</DatabaseTablespacesUseMode>
 			<CompatibilityMode>Version8_3_25</CompatibilityMode>
@@ -245,14 +245,11 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Role>СтандартныйРежим</Role>
-			<Catalog>Игроки</Catalog>
-			<Catalog>Персонажи</Catalog>
-			<Catalog>Арены</Catalog>
-			<Document>МатчиОнлайн</Document>
-			<DataProcessor>ПоискИгрока</DataProcessor>
+			<CommonModule>CollectTekken8Data</CommonModule>
+			<CommonModule>JSONCommands</CommonModule>
+			<CommonModule>CreateLog</CommonModule>
+			<ScheduledJob>CollectTekken8Data</ScheduledJob>
 			<DataProcessor>ForTesting</DataProcessor>
-			<InformationRegister>СтатистикаМатчей</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
