@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
-		<Metadata name="CommonModule.CollectTekken8Data" id="0f06c68a-70c9-4ba8-9613-722135dfd84c" configVersion="811bc99d02d27c4d8511e215d10effb000000000"/>
-		<Metadata name="CommonModule.CollectTekken8Data.Module" id="0f06c68a-70c9-4ba8-9613-722135dfd84c.0" configVersion="cf2a230967fda442a25382633658e8c500000000"/>
+		<Metadata name="CommonModule.CollectTekken8Data" id="0f06c68a-70c9-4ba8-9613-722135dfd84c" configVersion="0b463c89717f514fae7c4653937dbb5900000000"/>
+		<Metadata name="CommonModule.CollectTekken8Data.Module" id="0f06c68a-70c9-4ba8-9613-722135dfd84c.0" configVersion="80cec89c03b401429ea194eae726b9b500000000"/>
 		<Metadata name="CommonModule.JSONCommands" id="328cf460-e496-48a4-9006-1606d4a50dd7" configVersion="30d3fda095310544a50e3d1a8560bdf200000000"/>
 		<Metadata name="CommonModule.JSONCommands.Module" id="328cf460-e496-48a4-9006-1606d4a50dd7.0" configVersion="35bdba0bfcd1744fac64817a46533a8900000000"/>
 		<Metadata name="CommonModule.LogOperations" id="bb89002d-59ef-4921-b9ba-0bb2443f9caa" configVersion="8bfa577b60632140b298f9128e4f7f9d00000000"/>

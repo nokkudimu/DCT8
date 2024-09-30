@@ -1,5 +1,5 @@
 ﻿&НаКлиенте
-Асинх Процедура CollectTekken8Data() Экспорт
+Асинх Процедура CollectTekken8OnlineProwess() Экспорт
 	//checking if processes are active
 	Promise = ЗапуститьПриложениеАсинх(PathManager.AcquirePath(ПредопределенноеЗначение("Перечисление.Paths.shellScripts")) + "checkProcess.sh", , Истина);
 	Result = Ждать Promise;
@@ -15,4 +15,10 @@
 		LogLevel, 
 		ОписаниеОшибки());
 	КонецПопытки;
-КонецПроцедуры
+КонецПроцедуры 
+
+&НаКлиенте
+Асинх Процедура CollectTekken8OfflineProwess() Экспорт
+
+КонецПроцедуры 
+
