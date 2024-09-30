@@ -1,17 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.18">
 	<ConfigVersions>
-		<Metadata name="CommonModule.CollectTekken8Data" id="0f06c68a-70c9-4ba8-9613-722135dfd84c" configVersion="75346bbe1b04324fbd2408c7500f5a3400000000"/>
-		<Metadata name="CommonModule.CollectTekken8Data.Module" id="0f06c68a-70c9-4ba8-9613-722135dfd84c.0" configVersion="21393601f84e074b973f37a43dd1d4b700000000"/>
-		<Metadata name="CommonModule.CreateLog" id="bb89002d-59ef-4921-b9ba-0bb2443f9caa" configVersion="6ff015255d108a4e8bc5fe17a861af6200000000"/>
-		<Metadata name="CommonModule.JSONCommands" id="328cf460-e496-48a4-9006-1606d4a50dd7" configVersion="760167ef2fce2a468ff89194742f9a5900000000"/>
-		<Metadata name="CommonModule.JSONCommands.Module" id="328cf460-e496-48a4-9006-1606d4a50dd7.0" configVersion="b350752d9df55240a60ce35fb0ed74d300000000"/>
-		<Metadata name="Configuration.Конфигурация" id="66bc946a-678a-4bff-921d-0c7645f9a2ec" configVersion="94f28cd9c2ba674c98d7ca9d9c2aac7c00000000"/>
-		<Metadata name="DataProcessor.ForTesting" id="d54212e6-f5e1-40dd-a9ec-f380300236a7" configVersion="2b18fab0e8c4d34e84b38bc4822d804500000000"/>
-		<Metadata name="DataProcessor.ForTesting.Form.Форма" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa" configVersion="0e5099717feb844e8bd18d6bdcd9bd7800000000"/>
-		<Metadata name="DataProcessor.ForTesting.Form.Форма.Form" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa.0" configVersion="6b065d461ad6d24685138818ef8ed71c00000000"/>
-		<Metadata name="Language.Русский" id="56ae6793-241e-49e9-88df-fac30b618adf" configVersion="00b5a7af9aa97b4b8004d90a3e57822400000000"/>
-		<Metadata name="ScheduledJob.CollectTekken8Data" id="21992b56-1634-474d-9502-1af095c1cf72" configVersion="419f8e0a402d9942b598c3e1c5a8e5e300000000"/>
-		<Metadata name="ScheduledJob.CollectTekken8Data.Schedule" id="21992b56-1634-474d-9502-1af095c1cf72.0" configVersion="8a0d138dd8eb3248b99dabe7ca72537c00000000"/>
+		<Metadata name="CommonModule.CollectTekken8Data" id="0f06c68a-70c9-4ba8-9613-722135dfd84c" configVersion="811bc99d02d27c4d8511e215d10effb000000000"/>
+		<Metadata name="CommonModule.CollectTekken8Data.Module" id="0f06c68a-70c9-4ba8-9613-722135dfd84c.0" configVersion="cf2a230967fda442a25382633658e8c500000000"/>
+		<Metadata name="CommonModule.JSONCommands" id="328cf460-e496-48a4-9006-1606d4a50dd7" configVersion="30d3fda095310544a50e3d1a8560bdf200000000"/>
+		<Metadata name="CommonModule.JSONCommands.Module" id="328cf460-e496-48a4-9006-1606d4a50dd7.0" configVersion="35bdba0bfcd1744fac64817a46533a8900000000"/>
+		<Metadata name="CommonModule.LogOperations" id="bb89002d-59ef-4921-b9ba-0bb2443f9caa" configVersion="8bfa577b60632140b298f9128e4f7f9d00000000"/>
+		<Metadata name="CommonModule.LogOperations.Module" id="bb89002d-59ef-4921-b9ba-0bb2443f9caa.0" configVersion="bdff7a9598367540b7070cb886dae6d300000000"/>
+		<Metadata name="CommonModule.PathManager" id="8c59adec-8b9e-4a7e-b29f-14f7aa895d25" configVersion="fc0082b41339734593d21db6e2972fb200000000"/>
+		<Metadata name="CommonModule.PathManager.Module" id="8c59adec-8b9e-4a7e-b29f-14f7aa895d25.0" configVersion="201f9bbc34fa6a429bde128a610422b300000000"/>
+		<Metadata name="Configuration.Конфигурация" id="66bc946a-678a-4bff-921d-0c7645f9a2ec" configVersion="ecac531fefa6dc4a9a6355f8b72c730200000000"/>
+		<Metadata name="DataProcessor.ForTesting" id="d54212e6-f5e1-40dd-a9ec-f380300236a7" configVersion="8dc77377d9ed9c4c97aaa2cdc396b7df00000000"/>
+		<Metadata name="DataProcessor.ForTesting.Form.Форма" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa" configVersion="c2cd898f11f39841a8f8f3c0f529cb1000000000"/>
+		<Metadata name="DataProcessor.ForTesting.Form.Форма.Form" id="db31fdc0-22ac-4516-84c1-ed5e09bed7fa.0" configVersion="3a57a5bbb8d73541ad6f755b04fed6e000000000"/>
+		<Metadata name="Enum.LogLevels" id="fb225eb9-9c5a-4497-bd82-6ec5fc2903f6" configVersion="66772256d3e05742963d228b84a6626800000000">
+			<Metadata name="Enum.LogLevels.EnumValue.Warning" id="061248e7-12db-4807-a8af-45be4776b4a0"/>
+			<Metadata name="Enum.LogLevels.EnumValue.Info" id="14df1eb1-ff9a-430e-9f3d-8cd5c090184f"/>
+			<Metadata name="Enum.LogLevels.EnumValue.Fatal" id="15b08730-0055-4400-a9e0-9e18aed1234a"/>
+			<Metadata name="Enum.LogLevels.EnumValue.Error" id="87b2f302-5d01-4db5-8130-8024621b01c9"/>
+			<Metadata name="Enum.LogLevels.EnumValue.Debug" id="c1b5cff3-1961-4ed4-9dac-d0927c36be85"/>
+		</Metadata>
+		<Metadata name="Enum.Paths" id="fbcbc37d-9d65-4885-ad8c-eb9e2d270d81" configVersion="987361e45e6b314782c5a32b05aa9cc300000000">
+			<Metadata name="Enum.Paths.EnumValue.vzlom" id="3d31d8ed-b5d4-457b-b9f8-cefb563a7f86"/>
+			<Metadata name="Enum.Paths.EnumValue.shellScripts" id="567df383-cb3a-4903-ae28-07714a5c0531"/>
+			<Metadata name="Enum.Paths.EnumValue.temporaryFiles" id="930c9245-024f-4c16-a88c-46b39300f137"/>
+			<Metadata name="Enum.Paths.EnumValue.logs" id="b323cda1-60f7-4736-be2b-8b108dd63dd8"/>
+			<Metadata name="Enum.Paths.EnumValue.infoBase" id="c9bf9159-d0fd-43f6-b7e7-b89c5c04c768"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="56ae6793-241e-49e9-88df-fac30b618adf" configVersion="5b6f5af482249e4987af7c9b92be79f100000000"/>
+		<Metadata name="ScheduledJob.CollectTekken8Data" id="21992b56-1634-474d-9502-1af095c1cf72" configVersion="c702a71bb80f7840b2202c461875d86a00000000"/>
+		<Metadata name="ScheduledJob.CollectTekken8Data.Schedule" id="21992b56-1634-474d-9502-1af095c1cf72.0" configVersion="6e79961c44970f4990385b06c8f0ea0b00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

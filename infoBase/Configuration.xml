@@ -247,8 +247,11 @@
 			<Language>Русский</Language>
 			<CommonModule>CollectTekken8Data</CommonModule>
 			<CommonModule>JSONCommands</CommonModule>
-			<CommonModule>CreateLog</CommonModule>
+			<CommonModule>LogOperations</CommonModule>
+			<CommonModule>PathManager</CommonModule>
 			<ScheduledJob>CollectTekken8Data</ScheduledJob>
+			<Enum>LogLevels</Enum>
+			<Enum>Paths</Enum>
 			<DataProcessor>ForTesting</DataProcessor>
 		</ChildObjects>
 	</Configuration>
