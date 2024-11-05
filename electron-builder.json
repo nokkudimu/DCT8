@@ -1,0 +1,15 @@
+{
+    "appId": "com.nokkudimu.T8-data-extractor",
+    "files": ["dist-electron", "dist-react"],
+    "icon": "./desktopIcon.png",
+    "linux": {
+        "target": "AppImage",
+        "category": "Utility"
+    },
+    "win": {
+        "target": ["portable", "msi"]
+    },
+    "mac": {
+        "target": "dmg"
+    }
+}
