@@ -1,14 +1,28 @@
 import { SVGProps } from "react"
-export const grimoiresOfTheGreatAncients = (props: SVGProps<SVGSVGElement>) => (
+import { motion } from "framer-motion"
+export const GrimoiresOfTheGreatAncients = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    //width={412}
-    //height={141}
+    width={412}
+    height={141}
     viewBox="0 0 412 141"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g id="delomelanicon" filter="url(#filter0_d_0_1)">
+    <motion.g 
+      id="delomelanicon" 
+      filter="url(#filter0_d_0_1)"
+      animate={{
+        rotate: 2
+      }}
+      transition={{
+        times: [1, 0],
+        duration: 5,
+        repeat: Infinity,
+        type: "keyframes",
+        ease: "easeInOut",
+      }}
+      >
       <path
         id="Vector 4"
         d="M86.2627 84L84.5 89L129 88.5L76 50.5L71 54.5L113.5 84H86.2627Z"
@@ -39,7 +53,7 @@ export const grimoiresOfTheGreatAncients = (props: SVGProps<SVGSVGElement>) => (
         d="M70.44 11.61C78.38 11.61 86.09 13.17 93.33 16.23C100.33 19.19 106.63 23.43 112.03 28.84C117.43 34.24 121.68 40.54 124.64 47.54C127.71 54.79 129.26 62.49 129.26 70.43C129.26 78.37 127.7 86.08 124.64 93.32C121.68 100.32 117.44 106.61 112.03 112.02C106.62 117.43 100.33 121.67 93.33 124.63C86.08 127.7 78.38 129.25 70.44 129.25C62.5 129.25 54.79 127.69 47.55 124.63C40.55 121.67 34.26 117.43 28.85 112.02C23.45 106.62 19.2 100.32 16.24 93.32C13.17 86.07 11.62 78.37 11.62 70.43C11.62 62.49 13.18 54.78 16.24 47.54C19.2 40.54 23.44 34.24 28.85 28.84C34.26 23.44 40.55 19.19 47.55 16.23C54.79 13.17 62.49 11.61 70.44 11.61ZM70.44 6C34.85 6 6 34.85 6 70.44C6 106.03 34.85 134.88 70.44 134.88C106.03 134.88 134.88 106.03 134.88 70.44C134.88 34.85 106.02 6 70.44 6Z"
         fill="white"
       />
-    </g>
+    </motion.g>
     <g id="sauthenerom" filter="url(#filter1_d_0_1)">
       <g id="inner_symbol">
         <g id="arc">
@@ -268,3 +282,5 @@ export const grimoiresOfTheGreatAncients = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default GrimoiresOfTheGreatAncients
