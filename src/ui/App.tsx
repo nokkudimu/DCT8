@@ -1,12 +1,29 @@
-import { GrimoiresOfTheGreatAncients } from './components/grimoiresOfTheGreatAncientsSvg.tsx'
+import { useEffect, useState } from 'react'
+import { GrimoiresOfTheGreatAncientsSVG } from './components/grimoiresOfTheGreatAncientsSvg.tsx'
+import Placeholder from './components/placeholder.tsx';
 
 function App() {
 
+  const [introIsRunning, setIntroIsRunning] = useState<boolean>(true);
+  useEffect(() => {
+    setInterval(() => {
+      setIntroIsRunning(false);
+    }, 8000)
+  });
+
+  if (introIsRunning) {
+    return (
+      <div>
+        <GrimoiresOfTheGreatAncientsSVG />
+      </div>
+    )
+  }
   return (
     <div>
-      <GrimoiresOfTheGreatAncients />
+      <Placeholder />
     </div>
   )
 }
+
 
 export default App

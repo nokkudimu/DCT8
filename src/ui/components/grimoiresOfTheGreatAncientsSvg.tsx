@@ -1,13 +1,13 @@
 import { SVGProps, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 
-export const GrimoiresOfTheGreatAncients = (props: SVGProps<SVGSVGElement>) => {
+export const GrimoiresOfTheGreatAncientsSVG = (props: SVGProps<SVGSVGElement>) => {
   
   const [completedAnim1, setCompletedAnim1] = useState<boolean>(false);
   const [completedAnim2, setCompletedAnim2] = useState<boolean>(false);
   const [completedAnim3, setCompletedAnim3] = useState<boolean>(false);
   const [showSVG, setShowSVG] = useState<boolean>(true);
-  
+
   return (
     <AnimatePresence>
       {showSVG ? (
@@ -502,8 +502,7 @@ export const GrimoiresOfTheGreatAncients = (props: SVGProps<SVGSVGElement>) => {
       </svg>
       </motion.div>
       ) : null }
-  
   </AnimatePresence>
 )}
 
-export default GrimoiresOfTheGreatAncients
+export default GrimoiresOfTheGreatAncientsSVG
