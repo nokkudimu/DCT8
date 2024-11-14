@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { GrimoiresOfTheGreatAncientsSVG } from './components/grimoiresOfTheGreatAncientsSvg.tsx'
 import Placeholder from './components/placeholder.tsx';
+import './styles/index.css'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
     }, 8000)
   });
 
+  // starting intro
   if (introIsRunning) {
     return (
       <div>
@@ -18,12 +20,12 @@ function App() {
       </div>
     )
   }
+  // main app
   return (
     <div>
       <Placeholder />
     </div>
   )
 }
-
 
 export default App
