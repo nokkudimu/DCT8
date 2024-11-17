@@ -1,0 +1,21 @@
+$base-button-height: 50px;
+$base-button-width: 100px;
+$base-button-color: rgb(60, 0, 0);
+$base-button-border-color: white;
+$base-button-radius: 50px;
+
+.button {
+    height: $base-button-height;
+    width: $base-button-width;
+    background-color: $base-button-color;
+    border-color: $base-button-border-color;
+    border-radius: $base-button-radius;
+    
+    .content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

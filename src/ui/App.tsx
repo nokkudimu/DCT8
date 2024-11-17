@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { GrimoiresOfTheGreatAncientsSVG } from './components/grimoiresOfTheGreatAncientsSvg.tsx'
-import './styles/index.css'
+import './styles/main.css'
+import Button from './components/button.tsx';
 
 function App() {
 
@@ -22,7 +23,14 @@ function App() {
   // main app
   return (
     <div>
-      
+      <Button
+        className='button'
+        onClick={() => console.log('Clicked')}>
+        <p
+        className='content'>
+          Click
+        </p>
+      </Button>
     </div>
   )
 }

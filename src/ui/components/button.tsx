@@ -1,6 +1,17 @@
-export const Button = () => { 
+import { IButton } from "../interfaces/IButton"
+
+export const Button: React.FC<IButton> = ({
+    className,
+    children,
+    onClick    
+}) => { 
     return (
-        <div>Empty for now...</div>
+        <div
+            className={className}
+            onClick={onClick}
+            >
+        {children}
+        </div>
     )
 }
 

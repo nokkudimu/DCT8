@@ -1,0 +1,14 @@
+.button {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(60, 0, 0);
+  border-color: white;
+  border-radius: 50px;
+}
+.button .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=button.css.map */

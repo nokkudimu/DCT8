@@ -1,5 +1,10 @@
+@use './button/button';
+
+$base-text-color: white;
+$base-container-color: rgb(32, 32, 32);
+
 body {
-    background-color: rgb(32, 32, 32);
+    background-color: $base-container-color;
     position: relative;
     height: 100%;
     width: 100%;
@@ -10,4 +15,4 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+}
