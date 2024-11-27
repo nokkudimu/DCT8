@@ -1,2 +1,2 @@
-# T8-data-extractor
+# tekken 8 data collector
 
